@@ -23,8 +23,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "name": "jsui-components",
-  "version": "0.0.4",
+  "name": "jsui-components-react",
+  "version": "0.0.5",
   "type": "module",
   "scripts": {
     "dev": "vite",
