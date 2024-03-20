@@ -13,7 +13,12 @@ export default defineConfig({
     setupFiles: ['./src/setupTests.ts'],
     environment: 'jsdom',
   },
-  plugins: [react(), dts()],
+  plugins: [
+    react(),
+    dts({
+      exclude: ['**/*.stories.ts', '**/*.test.tsx'],
+    }),
+  ],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'index.ts'),
