@@ -23,7 +23,7 @@ export default function Checkbox({
 
   return (
     <label
-      className="flex flex-row items-center font-medium text-gray-500 cursor-pointer select-none hover:text-gray-700 group gap-x-2"
+      className="cv-flex cv-flex-row cv-items-center cv-font-medium cv-text-gray-500 cv-cursor-pointer cv-select-none hover:cv-text-gray-700 cv-group cv-gap-x-2"
       htmlFor={checkboxId}
     >
       <input

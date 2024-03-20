@@ -9,36 +9,38 @@ const buttonStyles = cva(
     variants: {
       buttonType: {
         primary:
-          'bg-violet-500 text-white border-violet-500 hover:bg-violet-600',
+          'cv-bg-violet-500 cv-text-white cv-border-violet-500 hover:cv-bg-violet-600',
         secondary:
-          'bg-gray-200 text-gray-600 border-gray-200 hover:bg-gray-300',
+          'cv-bg-gray-200 cv-text-gray-600 cv-border-gray-200 hover:cv-bg-gray-300',
         warning:
-          'bg-yellow-500 text-white border-yellow-500 hover:bg-yellow-600',
+          'cv-bg-yellow-500 cv-text-white cv-border-yellow-500 hover:cv-bg-yellow-600',
         outline:
-          'bg-white text-gray-600 hover:bg-gray-100 border hover:border-gray-100 border-gray-300 hover:shadow-md',
-        disabled: 'bg-black text-white border-black cursor-not-allowed',
-        error: 'bg-red-500 text-white border-red-500 hover:bg-red-600',
+          'cv-bg-white cv-text-gray-600 hover:cv-bg-gray-100 cv-border hover:cv-border-gray-100 cv-border-gray-300 hover:cv-shadow-md',
+        disabled:
+          'cv-bg-black cv-text-white cv-border-black cv-cursor-not-allowed',
+        error:
+          'cv-bg-red-500 cv-text-white cv-border-red-500 hover:cv-bg-red-600',
       },
       size: {
-        default: ['text-base'],
-        small: ['text-sm'],
-        large: ['text-lg'],
-        xxl: ['text-2xl'],
+        default: ['cv-text-base'],
+        small: ['cv-text-sm'],
+        large: ['cv-text-lg'],
+        xxl: ['cv-text-2xl'],
       },
       spacing: {
-        default: ['py-2', 'px-4'],
-        small: ['py-1', 'px-2'],
-        large: ['py-3', 'px-6'],
-        xxl: ['py-4', 'px-8'],
+        default: ['cv-py-2', 'cv-px-4'],
+        small: ['cv-py-1', 'cv-px-2'],
+        large: ['cv-py-3', 'cv-px-6'],
+        xxl: ['cv-py-4', 'cv-px-8'],
       },
       rounded: {
-        default: 'rounded-md',
-        sm: 'rounded-sm',
-        lg: 'rounded-lg',
-        xl: 'rounded-xl',
-        xxl: 'rounded-2xl',
-        none: 'rounded-none',
-        full: 'rounded-full',
+        default: 'cv-rounded-md',
+        sm: 'cv-rounded-sm',
+        lg: 'cv-rounded-lg',
+        xl: 'cv-rounded-xl',
+        xxl: 'cv-rounded-2xl',
+        none: 'cv-rounded-none',
+        full: 'cv-rounded-full',
       },
     },
     compoundVariants: [
