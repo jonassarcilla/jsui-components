@@ -1,0 +1,7 @@
+.eslintrc.cjs
+ios/
+android/
+*.config.js
+*.config.ts
+setupTests.ts
+index.ts
