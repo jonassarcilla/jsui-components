@@ -2,6 +2,7 @@ import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 import path from 'path';
+import { configDefaults } from 'vitest/config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,6 +13,28 @@ export default defineConfig({
     globals: true,
     setupFiles: ['./src/setupTests.ts'],
     environment: 'jsdom',
+    exclude: [
+      ...configDefaults.exclude,
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/cypress/**',
+      '**/.{idea,git,cache,output,temp}/**',
+      './src/config/**',
+      './storybook-static/**',
+    ],
+    coverage: {
+      // provider: 'istanbul',
+      include: ['src/**'],
+      exclude: [
+        'coverage/**',
+        'storybook-static/**',
+        '**/*{.,-}stories.?(c|m)[jt]s?(x)',
+      ]
+    },
+    reporters: ['html', 'json'],
+    outputFile: {
+      json: './unit-test-results.json',
+    },
   },
   plugins: [
     react(),

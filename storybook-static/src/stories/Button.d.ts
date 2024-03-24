@@ -23,5 +23,5 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export declare const Button: ({ primary, size, backgroundColor, label, ...props }: ButtonProps) => import('../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime').JSX.Element;
-export {};
+declare function Button({ primary, size, backgroundColor, label, ...props }: ButtonProps): import('../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime').JSX.Element;
+export default Button;

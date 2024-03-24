@@ -16,7 +16,7 @@
 
   # Commit the changes
   git add .
-  git commit -m "RELEASE (serif) : new release $new_version"
+  git commit -m "RELEASE (conveyui) : new release $new_version"
   git push origin master
 
   # Inform the user

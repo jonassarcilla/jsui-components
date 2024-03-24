@@ -7,5 +7,5 @@ interface HeaderProps {
     onLogout?: () => void;
     onCreateAccount?: () => void;
 }
-export declare const Header: ({ user, onLogin, onLogout, onCreateAccount, }: HeaderProps) => import('../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime').JSX.Element;
-export {};
+declare function Header({ user, onLogin, onLogout, onCreateAccount }: HeaderProps): import('../../node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime').JSX.Element;
+export default Header;

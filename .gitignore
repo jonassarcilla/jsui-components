@@ -26,3 +26,10 @@ dist-ssr
 *storybook.log
 
 .env
+# typescript
+*.tsbuildinfo
+
+# storybook
+storybook-static
+public/docs/
+coverage
