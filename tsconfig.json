@@ -24,7 +24,8 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
+      "@/*": ["./src/*"],
+      "@lib": ["src/lib/*"],
       "@tests/*": ["tests/*"]
     }
   },

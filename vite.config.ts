@@ -23,7 +23,6 @@ export default defineConfig({
       './storybook-static/**',
     ],
     coverage: {
-      // provider: 'istanbul',
       reportsDirectory: './tests/unit/coverage',
       include: ['src/**'],
       exclude: [
@@ -61,5 +60,11 @@ export default defineConfig({
     },
     sourcemap: true,
     emptyOutDir: true,
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+      '@lib': path.resolve(__dirname, './src/lib'),
+    },
   },
 });
