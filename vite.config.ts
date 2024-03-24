@@ -2,7 +2,7 @@ import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 import path from 'path';
-import { configDefaults } from 'vitest/config'
+import { configDefaults } from 'vitest/config';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -24,16 +24,18 @@ export default defineConfig({
     ],
     coverage: {
       // provider: 'istanbul',
+      reportsDirectory: './tests/unit/coverage',
       include: ['src/**'],
       exclude: [
         'coverage/**',
         'storybook-static/**',
         '**/*{.,-}stories.?(c|m)[jt]s?(x)',
-      ]
+      ],
     },
     reporters: ['html', 'json'],
     outputFile: {
-      json: './unit-test-results.json',
+      json: './tests/unit/json/test-results.json',
+      html: './tests/unit/html/test-results.json',
     },
   },
   plugins: [

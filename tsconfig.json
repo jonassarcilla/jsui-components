@@ -21,7 +21,12 @@
     "noFallthroughCasesInSwitch": true,
     "types": ["@testing-library/jest-dom"],
     "declaration": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@tests/*": ["tests/*"]
+    }
   },
   "include": ["index.ts", "src"],
   "references": [{ "path": "./tsconfig.node.json" }]
