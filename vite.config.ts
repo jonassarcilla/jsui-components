@@ -1,8 +1,7 @@
-import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
-import dts from 'vite-plugin-dts';
 import path from 'path';
-import { configDefaults } from 'vitest/config';
+import dts from 'vite-plugin-dts';
+import { configDefaults, defineConfig } from 'vitest/config';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -40,7 +39,7 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
-      exclude: ['**/*.stories.ts', '**/*.test.tsx'],
+      exclude: ['**/*.stories.ts', '**/*.test.tsx', '**/*.mocks.ts'],
     }),
   ],
   build: {
