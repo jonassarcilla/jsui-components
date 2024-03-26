@@ -24,7 +24,7 @@
     "access": "public"
   },
   "name": "jsui-components-react",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "type": "module",
   "scripts": {
     "dev": "vite",
