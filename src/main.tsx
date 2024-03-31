@@ -1,7 +1,9 @@
+import '@vscode/codicons/dist/codicon.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
+import './index.css';
+import './seti-icon.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

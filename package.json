@@ -28,8 +28,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -p tsconfig.production.json && vite build && npm run tailwind",
-    "tailwind": "npx tailwindcss -o ./dist/index.css",
+    "build": "tsc -p tsconfig.production.json && vite build",
+    "tailwind": "npx tailwindcss --o ./dist/index.css",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prepare": "husky install",
@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
+    "@vscode/codicons": "^0.0.35",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.363.0",

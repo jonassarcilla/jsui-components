@@ -1,16 +1,18 @@
 import { Button } from '@/components/atoms/button';
-import { Typography } from './components/atoms/typography';
+import '@/index.css';
 
-function App() {
+function Demo() {
   return (
     <div data-testid="app-wrapper">
       <h1 className="cv-bg-slate-600">Hello, world!</h1>
       <Button id="btnJunas" type="button" className="cv-w-full">
         Click me
       </Button>
-      <Typography />
     </div>
   );
 }
 
-export default App;
+// export default Demo;
+
+// eslint-disable-next-line import/prefer-default-export
+export { Demo };

@@ -57,3 +57,267 @@
     @apply cv-bg-background cv-text-foreground;
   }
 }
+
+@layer base {
+  :root {
+    /* Base Colors */
+    --color-base-01: #ffffff;
+    --color-base-02: #f0f0f0;
+    --color-base-03: #e7e7e7;
+    --color-base-04: #e5e5e5;
+    --color-base-05: #d4d4d4;
+    --color-base-06: #cccccc;
+    --color-base-07: #c6c6c6;
+    --color-base-08: #bbbbbb;
+    --color-base-09: #a0a0a0;
+    --color-base-10: #808080;
+    --color-base-11: #7f7f7f;
+    --color-base-12: #606060;
+    --color-base-13: #454545;
+    --color-base-14: #3c3c3c;
+    --color-base-15: #3a3d41;
+    --color-base-16: #333333;
+    --color-base-17: #303031;
+    --color-base-18: #292929;
+    --color-base-19: #252526;
+    --color-base-20: #1e1e1e;
+    --color-base-21: #000000;
+
+    /* Accents - Blues */
+    --color-blue-01: #75beff;
+    --color-blue-02: #40a6ff;
+    --color-blue-03: #3399cc;
+    --color-blue-04: #3794ff;
+    --color-blue-05: #0097fb;
+    --color-blue-06: #007acc;
+    --color-blue-07: #0e639c;
+    --color-blue-08: #264f78;
+    --color-blue-09: #094771;
+    --color-blue-10: #062f4a;
+    --color-blue-11: #001f33;
+
+    /* Accents - Reds */
+    --color-red-01: #f14c4c;
+    --color-red-02: #c74e39;
+    --color-red-03: #ff0000;
+    --color-red-04: #a31515;
+
+    /* Accents - Greens */
+    --color-green-01: #73c991;
+    --color-green-02: #40c8ae;
+    --color-green-03: #16825d;
+    --color-green-04: #327e36;
+    --color-green-05: #28632b;
+
+    /* Accents - Purples */
+    --color-purple-01: #6c6cc4;
+    --color-purple-02: #b180d7;
+    --color-purple-03: #bc3fbc;
+    --color-purple-04: #68217a;
+
+    /* Accents - Yellows */
+    --color-yellow-01: #d7ba7d;
+    --color-yellow-02: #cca700;
+    --color-yellow-03: #b89500;
+    --color-yellow-04: #bf8803;
+    --color-yellow-05: #ffff00;
+
+    /* Accents - Grays */
+    --color-gray-01: #e4e6f1;
+    --color-gray-02: #5f6a79;
+    --color-gray-03: #424750;
+
+    /* Seti */
+    --color-seti-blue: #519aba;
+    --color-seti-green: #8dc149;
+    --color-seti-orange: #e37933;
+    --color-seti-pink: #f55385;
+    --color-seti-red: #cc3e44;
+    --color-seti-steel: #7494a3;
+    --color-seti-yellow: #cbcb41;
+    --color-seti-purple: #a074c4;
+    --color-seti-ignore: #41535b;
+    --color-seti-white: #d4d7d6;
+    --color-seti-gray: #6d8086;
+  }
+
+  @font-face {
+    font-family: 'SFProText';
+    src: url('/fonts/SFProText-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 400;
+  }
+
+  @font-face {
+    font-family: 'SFProText';
+    src: url('/fonts/SFProText-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'SFProText';
+    src: url('/fonts/SFProText-Semibold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: 'SFProText';
+    src: url('/fonts/SFProText-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'SFProText';
+    src: url('/fonts/SFProText-Heavy.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 800 900;
+  }
+
+  @font-face {
+    font-family: 'Menlo';
+    src: url('/fonts/Menlo-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100 400;
+  }
+
+  @font-face {
+    font-family: 'Menlo';
+    src: url('/fonts/Menlo-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700 900;
+  }
+
+  @font-face {
+    font-family: 'InputMono';
+    src: url('/fonts/InputMono-Regular.ttf') format('truetype');
+    font-weight: 100 400;
+  }
+
+  @font-face {
+    font-family: 'Seti';
+    src: url('/fonts/seti.ttf') format('truetype');
+    font-weight: 100 400;
+  }
+
+  :root {
+    --font-sfprotext: 'SFProText';
+    --font-menlo: 'Menlo';
+    --font-inputmono: 'InputMono';
+    --font-seti: 'seti';
+  }
+
+  /* Typography */
+  h1,
+  .h1 {
+    @apply cv-font-sfProText cv-text-[26px] cv-font-[600] cv-not-italic cv-leading-normal;
+  }
+
+  h2,
+  .h2 {
+    @apply cv-font-sfProText cv-text-[14px] cv-font-[500] cv-not-italic cv-leading-normal;
+  }
+
+  h3,
+  .h3 {
+    @apply cv-font-sfProText cv-text-[13px] cv-font-[800] cv-not-italic cv-leading-normal;
+  }
+
+  h4,
+  .h4 {
+    @apply cv-font-sfProText cv-text-[11px] cv-font-[700] cv-uppercase cv-not-italic cv-leading-normal;
+  }
+
+  h5,
+  .h5 {
+    @apply cv-font-sfProText cv-text-[11px] cv-font-[500] cv-uppercase cv-not-italic cv-leading-normal;
+  }
+
+  h6,
+  .h6 {
+    @apply cv-font-sfProText cv-text-[11px] cv-font-[800] cv-not-italic cv-leading-normal;
+  }
+
+  body,
+  .body-1 {
+    @apply cv-font-sfProText cv-text-[13px] cv-font-[500] cv-not-italic cv-leading-normal;
+  }
+
+  .body-2 {
+    @apply cv-font-sfProText cv-text-[12px] cv-font-[500] cv-not-italic cv-leading-normal;
+  }
+
+  .label-1 {
+    @apply cv-font-sfProText cv-text-[14px] cv-font-[500] cv-not-italic cv-leading-[155.137%];
+  }
+
+  .label-2 {
+    @apply cv-font-sfProText cv-text-[12px] cv-font-[700] cv-not-italic cv-leading-[155.137%];
+  }
+
+  .label-3 {
+    @apply cv-font-sfProText cv-text-[11px] cv-font-[500] cv-not-italic cv-leading-[100%];
+  }
+
+  .label-4 {
+    @apply cv-font-sfProText cv-text-[9px] cv-font-[700] cv-not-italic cv-leading-normal;
+  }
+
+  .markdown-h1 {
+    @apply cv-font-sfProText cv-text-[26px] cv-font-[600] cv-not-italic cv-leading-normal;
+  }
+
+  .markdown-h2 {
+    @apply cv-font-sfProText cv-text-[20px] cv-font-[600] cv-not-italic cv-leading-normal;
+  }
+
+  .markdown-h3 {
+    @apply cv-font-sfProText cv-text-[15px] cv-font-[600] cv-not-italic cv-leading-normal;
+  }
+
+  .markdown-h4 {
+    @apply cv-font-sfProText cv-text-[13px] cv-font-[800] cv-not-italic cv-leading-normal;
+  }
+
+  .markdown-h5 {
+    @apply cv-font-sfProText cv-text-[11px] cv-font-[800] cv-not-italic cv-leading-normal;
+  }
+
+  .markdown-h6 {
+    @apply cv-font-sfProText cv-text-[9px] cv-font-[800] cv-not-italic cv-leading-normal;
+  }
+
+  .markdown-paragraph {
+    @apply cv-font-sfProText cv-text-[13px] cv-font-[500] cv-not-italic cv-leading-normal;
+  }
+
+  code,
+  .code-1 {
+    @apply cv-font-menlo cv-text-[12px] cv-font-[400] cv-not-italic cv-leading-[150%];
+  }
+
+  .code-2 {
+    @apply cv-font-menlo cv-text-[12px] cv-font-[700] cv-not-italic cv-leading-[151.328%];
+  }
+
+  .codicon {
+    @apply cv-text-[16px] cv-font-[400] cv-uppercase cv-not-italic cv-leading-normal;
+  }
+
+  .seti {
+    @apply cv-text-[20px] cv-font-[400] cv-uppercase cv-not-italic cv-leading-normal;
+  }
+
+  html,
+  body {
+    margin: 0;
+    min-width: 240px;
+    width: auto !important;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
